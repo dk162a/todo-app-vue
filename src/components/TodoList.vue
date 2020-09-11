@@ -101,6 +101,12 @@ export default {
     align-items: center;
     justify-content: space-between;
     animation-duration: .3s;
+    border: 1px solid #f5eded;
+    padding: 0 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .todo-item:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
   .remove-item {
     cursor: pointer;
@@ -117,13 +123,16 @@ export default {
     padding: 10px;
     border: 1px solid white;
     margin-left: 12px;
+    font-size: 20px;
   }
   .todo-item-edit {
-    font-size: 24px;
+    font-size: 20px;
     color: #2c3e50;
     margin-left: 12px;
     width: 100%;
-    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 3px 10px;
     border: 1px solid #ccc;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
   }

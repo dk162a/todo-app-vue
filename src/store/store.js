@@ -179,7 +179,7 @@ export const store = new Vuex.Store({
     deleteTodo(context, id) {
       axios.delete(`/todos/${id}`)
         .then(response => {
-          context.commit('deleteTodo', response.data)
+          context.commit('deleteTodo', id)
         })
         .catch(error => {
           console.log(error)
